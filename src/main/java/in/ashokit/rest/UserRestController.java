@@ -88,7 +88,7 @@ public class UserRestController {
         }
     }
 
-    @PostMapping("/register")
+    @PostMapping("/user")
     public ResponseEntity<ApiResponse<String>> resgisterUser(@RequestBody UserDto userDto){
         ApiResponse<String> response = new ApiResponse<>();
         boolean isRegistered = userService.register(userDto);
